@@ -1,59 +1,19 @@
-## Introduction
+When creating a variable in a script, you can declare it to be `public`. 
 
-Add project description here. What will learners be making? Broadly what skills will they be learning?
+```
+public float patrolSpeed = 0.0f; // default value if not set in Inspector
+```
 
-### What you will make
+This means that the variable will appear in the script component in the Inspector window. 
 
---- no-print ---
-Add instructions for interacting with the embedded content here.
+You can use the public variable during playmode to experiment with settings such as move and spin speed. Remember any changes you make in playmode will be lost when you exit playmode so take a note of your favourite values. 
 
-<div class="scratch-preview">
-  <iframe allowtransparency="true" width="485" height="402" src="https://scratch.mit.edu/projects/embed/160619869/?autostart=false" frameborder="0"></iframe>
-</div>
---- /no-print ---
+Multiple GameObjects can use the same Script and set different values in the Inspector for public variables. 
 
---- print-only ---
-![Complete project](images/showcase_static.png)
---- /print-only ---
+**Tip:** Be careful when setting public variables in the Inspector window as this will override values set in your script. 
 
---- collapse ---
----
-title: What you will need
----
-### Hardware
+You can create many types of public variable such as `GameObject` variables so that you can access GameObjects from the scene:
 
-+ A computer or tablet capable of running Scratch 3
-
-### Software
-
-+ Scratch 3 (either [online](https://scratch.mit.edu/){:target="_blank"} or [offline](https://scratch.mit.edu/download){:target="_blank"})
-+ Python 3
-+ This project can be completed in a web browser using [trinket.io](https://trinket.io/)
-
-### Downloads
-
-+ Download the project [starter file](http://rpf.io/p/en/projectName-go){:target="_blank"} if working offline
-
---- /collapse ---
-
---- collapse ---
----
-title: What you will learn
----
-
-+ Learning objective 1
-+ Learning objective 2
-+ Learning objective 3
-
---- /collapse ---
-
---- collapse ---
----
-title: Additional information for educators
----
-
-You can download the completed project [here](http://rpf.io/p/en/projectName-get){:target="_blank"}.
-
-If you need to print this project, please use the [printer-friendly version](https://projects.raspberrypi.org/en/projects/projectName/print){:target="_blank"}.
-
---- /collapse ---
+```
+public GameObject Player;
+```
