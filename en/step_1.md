@@ -1,8 +1,11 @@
 When creating a variable in a script, you can declare it to be `public`. 
 
-```
+--- code ---
+---
+language: cs
+---
 public float patrolSpeed = 0.0f; // default value if not set in Inspector
-```
+--- /code ---
 
 This means that the variable will appear in the script component in the Inspector window. 
 
@@ -14,6 +17,9 @@ Multiple GameObjects can use the same Script and set different values in the Ins
 
 You can create many types of public variable such as `GameObject` variables so that you can access GameObjects from the scene:
 
-```
-public GameObject Player;
-```
+--- code ---
+---
+language: cs
+---
+public GameObject player;
+--- /code ---
